@@ -1,0 +1,24 @@
+# permissions for end users to edit testcrds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: testcrd-editor-role
+rules:
+- apiGroups:
+  - custom.test.com
+  resources:
+  - testcrds
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - custom.test.com
+  resources:
+  - testcrds/status
+  verbs:
+  - get

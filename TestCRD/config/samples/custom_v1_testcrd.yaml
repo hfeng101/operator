@@ -1,0 +1,8 @@
+apiVersion: custom.test.com/v1
+kind: TestCRD
+metadata:
+  name: testcrd-sample
+spec:
+  # Add fields here
+  foo: bar
+  ScaleRate: 24

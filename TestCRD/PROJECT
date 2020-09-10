@@ -1,0 +1,9 @@
+domain: test.com
+layout: go.kubebuilder.io/v2
+projectName: test-crd
+repo: k8s.io/kubernetes
+resources:
+- group: custom
+  kind: TestCRD
+  version: v1
+version: 3-alpha
